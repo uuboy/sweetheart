@@ -1,32 +1,22 @@
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-expand-md navbar-light  navbar-static-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" date-toggle="collapse" date-target="#app-navbar-collapse">
-                <span class="sr-only">Toggle Navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
             <a class="navbar-brand" href="{{ url('/') }}">
                 宝宝的回忆之家
             </a>
         </div>
-
-        <div class="collapse navbar-collapse" id="app-navbar-collapse">
-            <!-- left side of navbar -->
-            <ul class="nav navbar-nav">
-
-            </ul>
-
-            <!-- rigt side of navbar -->
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#app-navbar-collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="app-navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
                         登陆
                     </a>
                 </li>
-                <li>
-                    <a href="#">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
                         注册
                     </a>
                 </li>
