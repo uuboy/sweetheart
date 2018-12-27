@@ -11,17 +11,18 @@
     <title>@yield('title','宝宝的回忆之家')</title>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app" class="{{ route_class() }}-page">
         @include('layouts._header')
         <div class="container">
+            @include('shared._messages')
             @yield('content')
         </div>
         @include('layouts._footer')
     </div>
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
