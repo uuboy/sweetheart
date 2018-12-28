@@ -7,7 +7,7 @@ use App\Http\Requests\RecordRequest;
 use App\Models\Record;
 use App\Handdlers\ImageUploadHandler;
 
-class RecordController extends Controller
+class RecordsController extends Controller
 {
     public function store(RecordRequest $request,ImageUploadHandler $uploader, Record $record)
     {

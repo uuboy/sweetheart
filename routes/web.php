@@ -13,3 +13,6 @@
 
 Route::get('/','PagesController@index')->name('index');
 Auth::routes(['verify' => true]);
+
+//用户路由
+Route::resource('users','UsersController',['only'=>['show','update','edit']]);

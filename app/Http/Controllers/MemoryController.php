@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\MemoryRequest;
 use App\Models\Memory;
 
-class MemoryController extends Controller
+class MemoriesController extends Controller
 {
     public function store(MemoryRequest $request,Memory $memory)
     {
